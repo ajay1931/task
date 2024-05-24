@@ -1,0 +1,26 @@
+<!-- <input  id="text">
+<button onclick="update()">click</button>
+<h1 id="para"></h1>
+
+<script>
+    var text = document.getElementById("text")
+    var para = document.getElementById("para")
+    function update() {
+        para.textContent = text.value
+        console.log(typeof text)
+        console.log(typeof para)
+    }
+</script> -->
+
+<input id="text" onkeyup="update()" >
+<h1 id="para"></h1>
+
+<script>
+    var text=document.getElementById("text")
+    var para=document.getElementById("para")
+
+    function update(){
+        para.textContent=text.value
+        console.log(para.textContent)
+    }
+</script>

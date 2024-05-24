@@ -1,0 +1,14 @@
+<button onclick="update()">add</button>
+<!-- create div tag and then create h1 tag inside of function  -->
+<div id="result"></div>
+
+<script>
+    var div=document.getElementById("result")
+
+    function update(){
+        // creating new element(h1 tag)
+        var h1=document.createElement("h1")
+        h1.textContent="hello"
+        div.append(h1)
+    }
+</script>
