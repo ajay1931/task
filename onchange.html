@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onchange events</title>
+    <script>
+        function changeColourEvent(x) {
+            document.bgColor = x;
+        }
+        function changeLocationEvent(y) {
+            window.location = y;
+        }
+        function changeBackgroundImage(z) {
+            document.body.style.backgroundImage = "url('" + z + "')";
+        }
+    </script>
+    <style>
+        body {
+           background-position: center;
+           background-size: cover;
+           height: 25em;
+        }
+    </style>
+</head>
+
+<body>
+    <select onchange="changeColourEvent(this.value)">
+        <option value="">no colour</option>
+        <option value="blue">Blue</option>
+        <option value="black">Black</option>
+        <option value="red">red</option>
+        <option value="green">green</option>
+        <option value="orange">orange</option>
+    </select>
+    <br>
+    <select onchange="changeLocationEvent(this.value)">
+        <option value="https://www.w3schools.com/js/js_events.asp">w3 school</option>
+        <option value="https://www.youtube.com/watch?v=pN6jk0uUrD8&list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP">java script
+        </option>
+        <option value="file:///C:/Users/admin/Desktop/zenech%20info%20tech/class3.html">form</option>
+    </select>
+    <br>
+    <select onchange="changeBackgroundImage(this.value)">
+        <option value="car.jpg">car</option>
+        <option value="carafe.jpg">carafe</option>
+        <option value="nature.jpg">nature</option>
+        <option value="spicy.jpg">spicy</option>
+    </select>
+</body>
+
+</html>
